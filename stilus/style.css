@@ -31,6 +31,10 @@
     font-family: sigmar;
     src: url(../betutipusok/sigmar.ttf);
 }
+
+html{
+    height: 100vh;
+}
 *{
     box-sizing: border-box;
     margin:0;
@@ -207,10 +211,11 @@ nav{
 .tartalom{
     background-color: rgb(0, 0, 0);
     color: white;
-    padding: 30px;
+    padding: 40px;
     font-weight: 40;
     font-size: 30px;
     border-top:6px solid rgb(255, 0, 64);
+    border-bottom: 6px solid rgb(255, 0, 64);
 }
 .container {
     display: grid; 
@@ -259,7 +264,12 @@ nav{
     text-align: center;
     font-size: 40px;
 }
-
+iframe{
+    border: 0px black solid;
+    height: 150vh;
+    width: 100%;
+    display: block
+}
 
 ::-webkit-scrollbar {
     width: 6px;
@@ -300,4 +310,17 @@ nav{
   }
   #gorget:focus{
     border:2px solid rgb(255, 0, 64);
+  }
+  footer{
+    background-color: black;
+    height: 140px;
+    width: 100%;
+    border-top:6px solid rgb(255, 0, 64);
+
+  }
+  footer h1{
+    line-height: 130px;
+    color:white;
+    text-align: center;
+    
   }
