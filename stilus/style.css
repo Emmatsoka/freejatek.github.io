@@ -224,7 +224,6 @@ nav{
   }
   .jobb { 
 
-    padding-left: 20px;
     grid-area: jobb; 
 }
   .bal { 
@@ -241,7 +240,15 @@ nav{
         display: none;
     }
     .container {
-        display: inline; 
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "bal bal jobb"
+          "bal bal jobb"
+          "bal bal jobb"; 
+    }
 }
 
 #aktiv{
