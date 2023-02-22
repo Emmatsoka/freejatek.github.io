@@ -337,3 +337,10 @@ iframe{
     background-size: cover;
     background-attachment: fixed;
   }
+  @media only screen and (max-width: 900px){
+
+    iframe{
+        height: 170vh;
+    }
+
+  }
