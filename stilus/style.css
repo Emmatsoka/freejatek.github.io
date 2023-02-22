@@ -64,7 +64,7 @@ header{
 .szoveg{
     color: white;
     text-align: center;
-    padding-top:220px;
+    padding-top:25vh;
 }
 .szoveg p{
     font-size: 30px;
@@ -111,57 +111,83 @@ header{
 }
 
 
+@media only screen and (min-width: 1128px){
+
+    nav ul li{
+        display: inline-block;
+        font-size: 25px;
+        margin:0 12px;
+        font-weight: bolder;
+       
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    
+    }
+    nav ul li a{
+        color:white;
+        padding:5px;
+        font-family: dexend;
+    }
 
 
-nav{
-    height: 100px;
-    width: 100%;
-    color:white;
-    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+
+    nav ul li a:hover{
+        color:rgb(255, 0, 64);
+        font-size: 26px;
+    }
+
+ .logo{
+    font-size: 45px;
+    padding: 0 50px ;
+ }
+#menu{
+    display:none;
+}
+}
+@media only screen and (max-width: 1128px){
+    nav ul li a{
+        display:none;
+    }
+    .logo{
+        font-size: 30px;
+        padding: 0 30px ;
+    }
+    .szoveg input{
+        width: 50%;
+    }
+}
+button{
+    background-color: transparent;
+    border: 0px solid black;
+}
+nav label.logo mark{
+    color: rgb(255, 0, 64);
+    background-color: transparent;
 }
 nav ul{
     float:right;
     margin-right:20px;
     padding-top: 35px;
 }
-nav ul li{
-    display: inline-block;
-    font-size: 25px;
-    margin:0 12px;
-    font-weight: bolder;
-   
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-
-}
-nav ul li a{
-    color:white;
-    padding:5px;
-    font-family: dexend;
-}
 .logo{
     font-family: space;
-    font-size: 40px;
+  
     font-weight: bolder;
-    padding: 0 50px ;
     padding-top: 60px;
     line-height: 97px;
 }
-nav label.logo mark{
-    color: rgb(255, 0, 64);
-    background-color: transparent;
+nav{
+    height: 100px;
+    width: 100%;
+    color:white;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
 }
 .piros{
     color:rgb(255, 0, 64);
     display:inline;
-}
-
-nav ul li a:hover{
-    color:rgb(255, 0, 64);
-    font-size: 26px;
 }
 .logo:hover{
     font-size: 42px;
@@ -170,7 +196,7 @@ nav ul li a:hover{
 }
 .logo mark:hover{
     color: white;
-    
+
 }
 .tartalom{
     background-color: rgb(0, 0, 0);
