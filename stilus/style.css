@@ -55,7 +55,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-
+ 
 }
 
 header{
@@ -413,3 +413,6 @@ iframe{
 
   }
 
+.jatek ul li{
+    display: inline-block;
+}
