@@ -156,7 +156,12 @@ header{
         padding: 0 30px ;
     }
     .szoveg input{
-        width: 50%;
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 300px){
+    .szoveg{
+        padding-top: 17vh;
     }
 }
 button{
@@ -216,8 +221,14 @@ nav{
       "bal bal jobb"
       "bal bal jobb"; 
   }
-  .jobb { grid-area: jobb; }
-  .bal { grid-area: bal; }
+  .jobb { 
+
+    grid-area: jobb; 
+}
+  .bal { 
+    border-right: rgb(255, 0, 64) solid 5px;
+    grid-area: bal; 
+}
 #aktiv{
     color:rgb(255, 0, 64);
     font-size: 26px;
