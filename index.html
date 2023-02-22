@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free / Játék | Crackelt játékok</title>
+
+    <link rel="stylesheet" href="./stilus/style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="egesz">
+
+            <header>
+
+        
+            <nav>
+                <label class="logo">Free<mark>Jatek</mark></label>
+                <ul>
+                    <li><a href="#" id="aktiv">Főoldal</a></li>
+                    <li><a href="#">Játékok</a></li>
+                    <li><a href="#">Kapcsolat</a></li>
+                    <li><a href="#">Források</a></li>
+                    <li><a href="#">Adatvédelem</a></li>
+                </ul>
+            </nav>
+            <div class="szoveg">
+            <h1>Üdv az <div class="piros">oldalon!</div></h1>
+            <p>
+            <a id="szoveg" href="" class="typewrite" data-period="2000" data-type='[ "Töltsd le és játssz!", "Játékok, ingyen, magyarítással", "Fizetős játékok ingyen", "Crackelt játékok" ]'>
+                <span class="wrap"></span>
+              </a></p>
+            <input type="text" name="ide" value="" id="nev" placeHolder="pl: Grand Theft Auto V">
+            <button id="gomb"><img src="./kepek/keresopiros.png" height="15px" width="auto"></button>
+            <button  id="gorget" title="Go to top" onClick="document.getElementById('nep').scrollIntoView();"><img src="./kepek/lenyilpiros.png" height="15px" width="auto"></button>
+        </div>
+        </header>
+        <div class="tartalom" id="nep">
+            <div class="container">
+                <div class="jobb">
+                    <h1>Kategóriák</h1>
+                </div>
+                <div class="bal">
+                    <h1 >Népszerú játékok</h1>
+                    <p>a</p>
+                    <p>b</p>
+                    <p>c</p>
+                    <p>d</p>
+                    <p>e</p>
+                    <p>c</p>
+                    <p>d</p>
+                    <p>e</p>
+                    <p>c</p>
+                    <p>d</p>
+                    <p>e</p>
+                    <p>c</p>
+                    <p>d</p>
+                    <p>e</p>
+                    <p>c</p>
+                    <p>d</p>
+                    <p>e</p>
+                    <p>d</p>
+                    <p>e</p>
+                    <p>c</p>
+                    <p>d</p>
+                    <p>e</p>
+                    <p>c</p>
+                    <p>d</p>
+                    <p>e</p>
+                    <p>c</p>
+                    <p>d</p>
+                    <p>e</p>
+                    <p>c</p>
+                    <p>d</p>
+                    <p>e</p>
+                </div>
+              </div>
+        </div>
+      
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+    </div>
+
+</body>
+</html>

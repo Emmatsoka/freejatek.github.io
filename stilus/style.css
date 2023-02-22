@@ -1,0 +1,244 @@
+@font-face {
+    font-family: dexend;
+    src: url(../betutipusok/lexend.ttf);
+}
+@font-face {
+    font-family: modern;
+    src: url(../betutipusok/modern.ttf);
+}
+
+@font-face {
+    font-family: space;
+    src: url(../betutipusok/spacemission.otf);
+}
+@font-face {
+    font-family: vermi;
+    src: url(../betutipusok/vermi.ttf);
+}
+@font-face {
+    font-family: waru;
+    src: url(../betutipusok/waru.ttf);
+}
+@font-face {
+    font-family: kwark;
+    src: url(../betutipusok/kwark.ttf);
+}
+@font-face {
+    font-family: bebas;
+    src: url(../betutipusok/bebas.ttf);
+}
+@font-face {
+    font-family: sigmar;
+    src: url(../betutipusok/sigmar.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: bebas;
+    background-image: url('../kepek/back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+header{
+    background-color: rgba(0, 0, 0, 0.295);
+    height: 100vh;
+}
+.szoveg h1{
+    text-align: center;
+    font-size: 60px;
+}
+.szoveg{
+    color: white;
+    text-align: center;
+    padding-top:220px;
+}
+.szoveg p{
+    font-size: 30px;
+}
+.szoveg input{
+    margin-top: 30px;
+    padding: 17px;
+    width: 22%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: black;
+    color:white;
+    border: 0px solid black;
+}
+#szoveg{
+    color:rgba(255, 255, 255, 0.932);
+}
+.szoveg input:focus{
+    border:2px solid rgb(255, 0, 64);
+    outline:none;
+}
+.szoveg input:hover{
+    background-color: #0f0f0f;
+}
+
+#gomb{
+    background-color:black ;
+    padding:17px;
+    border:none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    cursor:pointer;
+
+}
+#gomb:focus{
+    border: 2px solid rgb(255, 0, 64);
+    outline: none;
+}
+
+
+
+
+nav{
+    height: 100px;
+    width: 100%;
+    color:white;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+}
+nav ul{
+    float:right;
+    margin-right:20px;
+    padding-top: 35px;
+}
+nav ul li{
+    display: inline-block;
+    font-size: 25px;
+    margin:0 12px;
+    font-weight: bolder;
+   
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+nav ul li a{
+    color:white;
+    padding:5px;
+    font-family: dexend;
+}
+.logo{
+    font-family: space;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 0 50px ;
+    padding-top: 60px;
+    line-height: 97px;
+}
+nav label.logo mark{
+    color: rgb(255, 0, 64);
+    background-color: transparent;
+}
+.piros{
+    color:rgb(255, 0, 64);
+    display:inline;
+}
+
+nav ul li a:hover{
+    color:rgb(255, 0, 64);
+    font-size: 26px;
+}
+.logo:hover{
+    font-size: 42px;
+    cursor:pointer;
+    color:rgb(255, 0, 64);
+}
+.logo mark:hover{
+    color: white;
+    
+}
+.tartalom{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 30px;
+    font-weight: 40;
+    font-size: 30px;
+    border-top:6px solid rgb(255, 0, 64);
+}
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "bal bal jobb"
+      "bal bal jobb"
+      "bal bal jobb"; 
+  }
+  .jobb { grid-area: jobb; }
+  .bal { grid-area: bal; }
+#aktiv{
+    color:rgb(255, 0, 64);
+    font-size: 26px;
+}
+.tartalom h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 0, 64);
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(131, 0, 33);
+  }
+
+#gorget {
+    display: inline; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 0, 0); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  #gorget:hover{
+    background-color: rgb(20, 20, 20);
+  }
+  #gorget:focus{
+    border:2px solid rgb(255, 0, 64);
+  }
