@@ -164,6 +164,12 @@ header{
         padding-top: 17vh;
     }
 }
+@media only screen and (max-width: 900px){
+
+    .bal { 
+        border-right: rgb(255, 0, 64) solid 0px;
+    }
+}
 button{
     background-color: transparent;
     border: 0px solid black;
