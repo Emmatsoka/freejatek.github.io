@@ -164,12 +164,7 @@ header{
         padding-top: 17vh;
     }
 }
-@media only screen and (max-width: 900px){
 
-    .bal { 
-        border-right: rgb(255, 0, 64) solid 0px;
-    }
-}
 button{
     background-color: transparent;
     border: 0px solid black;
@@ -229,12 +224,26 @@ nav{
   }
   .jobb { 
 
+    padding-left: 20px;
     grid-area: jobb; 
 }
   .bal { 
     border-right: rgb(255, 0, 64) solid 5px;
     grid-area: bal; 
 }
+
+@media only screen and (max-width: 900px){
+
+    .bal{ 
+        border-right: rgb(255, 0, 64) solid 0px;
+    }
+    .jobb{
+        display: none;
+    }
+    .container {
+        display: inline; 
+}
+
 #aktiv{
     color:rgb(255, 0, 64);
     font-size: 26px;
