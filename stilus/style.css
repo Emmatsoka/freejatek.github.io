@@ -211,11 +211,18 @@ nav{
 .tartalom{
     background-color: rgb(0, 0, 0);
     color: white;
-    padding: 40px;
+    padding: 60px;
     font-weight: 40;
     font-size: 30px;
     border-top:6px solid rgb(255, 0, 64);
     border-bottom: 6px solid rgb(255, 0, 64);
+}
+.tartalom p{
+    padding-left: 20px;
+
+}
+.tartalom h1{
+    color:rgb(255, 0, 64);
 }
 .container {
     display: grid; 
@@ -266,7 +273,7 @@ nav{
 }
 iframe{
     border: 0px black solid;
-    height: 150vh;
+    height: 155vh;
     width: 100%;
     display: block
 }
@@ -323,4 +330,10 @@ iframe{
     color:white;
     text-align: center;
     
+  }
+  #nep{
+    background-image: url('../kepek/htr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
