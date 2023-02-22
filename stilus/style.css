@@ -337,10 +337,74 @@ iframe{
     background-size: cover;
     background-attachment: fixed;
   }
-  @media only screen and (max-width: 900px){
+  @media only screen and (max-height: 1378px){
+
+    iframe{
+        height: 120vh;
+    }
+
+  }
+  @media only screen and (max-height: 1282px){
+
+    iframe{
+        height: 110vh;
+    }
+
+  }
+  @media only screen and (max-height: 1180px){
+
+    iframe{
+        height: 130vh;
+    }
+
+  }
+  @media only screen and (max-height: 1024px){
+
+    iframe{
+        height: 150vh;
+    }
+
+  }
+  @media only screen and (max-height: 950px){
+
+    iframe{
+        height: 170vh;
+    }
+
+  }
+  @media only screen and (max-height: 900px){
 
     iframe{
         height: 190vh;
     }
 
   }
+  @media only screen and (max-height: 800px){
+
+    iframe{
+        height: 220vh;
+    }
+
+  }
+  @media only screen and (max-height: 720px){
+
+    iframe{
+        height: 220vh;
+    }
+
+  }
+  @media only screen and (max-height: 667px){
+
+    iframe{
+        height: 240vh;
+    }
+
+  }
+  @media only screen and (max-height: 600px){
+
+    iframe{
+        height: 250vh;
+    }
+
+  }
+
