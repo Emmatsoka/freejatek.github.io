@@ -5,7 +5,7 @@ window.onload = function () {
         var BackgroundImg=["../kepek/back.jpg",
             "../kepek/back2.png"
         ];
-        var i = Math.floor((Math.random() * 4));
+        var i = Math.floor((Math.random() * 2));
         document.body.style.backgroundImage = 'url("' + BackgroundImg[i] + '")';
     }
     window.setInterval(changeImage, 5000);
