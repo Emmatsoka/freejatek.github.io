@@ -280,7 +280,8 @@ iframe{
     border: 0px black solid;
     height: 155vh;
     width: 100%;
-    display: block
+    display: block;
+    min-height: 155vh;
 }
 
 ::-webkit-scrollbar {
