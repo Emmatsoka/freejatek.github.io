@@ -330,8 +330,8 @@ iframe{
     background-color: black;
     height: 140px;
     width: 100%;
-
-
+    border-top:6px solid rgb(255, 0, 64);
+    margin-top:50px;
   }
   footer h1{
     line-height: 130px;
