@@ -425,9 +425,6 @@ iframe{
 }
 
 .element-animation {
-  margin: 2rem 0;
-  font-size: 3rem;
-  
   /* Hiding the element in the initial state */
   opacity: 0;
   transform: translateY(20px);
