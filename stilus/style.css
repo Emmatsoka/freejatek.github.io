@@ -425,6 +425,9 @@ iframe{
     text-align: center;
     max-width: 300px;
 }
+.fooldal{
+    text-align:center;
+}
 
 .element-animation {
   /* Hiding the element in the initial state */
