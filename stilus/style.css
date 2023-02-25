@@ -62,19 +62,20 @@ header{
     background-color: rgba(0, 0, 0, 0.295);
     height: 100vh;
 }
-.szoveg h1{
+#szoveg h1{
     text-align: center;
     font-size: 60px;
 }
-.szoveg{
+#szoveg{
     color: white;
     text-align: center;
     padding-top:25vh;
+    position:initial;
 }
-.szoveg p{
+#szoveg p{
     font-size: 30px;
 }
-.szoveg input{
+#szoveg input{
     margin-top: 30px;
     padding: 17px;
     width: 22%;
@@ -87,17 +88,136 @@ header{
     color:white;
     border: 0px solid black;
 }
-#szoveg{
+#szovegg{
     color:rgba(255, 255, 255, 0.932);
+    position:static;
 }
-.szoveg input:focus{
+#szoveg input:focus{
     border:2px solid rgb(255, 0, 64);
     outline:none;
 }
-.szoveg input:hover{
+#szoveg input:hover{
     background-color: #0f0f0f;
 }
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.452),rgba(0, 0, 0, 0));
+    color: white;
+    padding-bottom: 30px;
+}
 
+#logo {
+    font-size: 45px;
+    padding: 0 55px ;
+    font-weight: bold;
+    font-family: space;
+}
+mark{
+    background-color: transparent;
+    color:rgb(255, 0, 64);
+}
+
+#navbar-links {
+    height: 100%;
+}
+
+#navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+}
+
+#navbar-links li {
+    list-style: none;
+
+}
+
+#navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1.0rem;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: dexend;
+    padding-top: 35px;
+    
+}
+#navbar-links li a:hover{
+    color:rgb(255, 0, 64);
+    font-size: 25px;
+}
+#navbar-links li:hover {
+    background-color: #55555500;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+
+  #menu-toggle {
+    display: none;
+  }
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+#navbar-links a:focus{
+    color: rgb(255, 0, 64);
+}
+@media (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+#logo {
+    margin-top: 25px;
+}
+    .toggle-button {
+        margin: 20px;
+        margin-top: 30px;
+        display: flex;
+    }
+.navbar{
+    padding-bottom: 20px;
+}
+    #navbar-links {
+        display:none;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #navbar-links ul li {
+        text-align: center;
+    }
+
+    #navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    #navbar-links.active {
+        display: flex;
+    }
+}
 #gomb{
     background-color:rgba(0, 0, 0, 0.719); ;
     padding:17px;
@@ -119,56 +239,19 @@ header{
 }
 
 
-@media only screen and (min-width: 1128px){
 
-    nav ul li{
-        display: inline-block;
-        font-size: 25px;
-        margin:0 12px;
-        font-weight: bolder;
-       
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-    
-    }
-    nav ul li a{
-        color:white;
-        padding:5px;
-        font-family: dexend;
-    }
-
-
-
-    nav ul li a:hover{
-        color:rgb(255, 0, 64);
-        font-size: 26px;
-    }
-
- .logo{
-    font-size: 45px;
-    padding: 0 50px ;
- }
-#menu{
-    display:none;
-}
-}
 @media only screen and (max-width: 1128px){
-    nav ul li a{
-        display:none;
-    }
-    .logo{
+
+    #logo{
         font-size: 30px;
         padding: 0 30px ;
     }
-    .szoveg input{
+    #szoveg input{
         width: 60%;
     }
 }
 @media only screen and (max-width: 300px){
-    .szoveg{
+    #szoveg{
         padding-top: 17vh;
     }
 }
@@ -177,38 +260,24 @@ button{
     background-color: transparent;
     border: 0px solid black;
 }
-nav label.logo mark{
-    color: rgb(255, 0, 64);
-    background-color: transparent;
-}
-nav ul{
-    float:right;
-    margin-right:20px;
-    padding-top: 35px;
-}
-.logo{
+
+#logo{
     font-family: space;
   
     font-weight: bolder;
-    padding-top: 60px;
-    line-height: 97px;
+    padding-top: 10px;
 }
-nav{
-    height: 100px;
-    width: 100%;
-    color:white;
-    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
-}
+
 .piros{
     color:rgb(255, 0, 64);
     display:inline;
 }
-.logo:hover{
+#logo:hover{
     font-size: 42px;
     cursor:pointer;
     color:rgb(255, 0, 64);
 }
-.logo mark:hover{
+#logo mark:hover{
     color: white;
 
 }
@@ -305,7 +374,7 @@ iframe{
     background: rgb(131, 0, 33);
   }
 
-#gorget {
+  #gorget {
     display: inline; 
     position: fixed; 
     bottom: 20px; 
@@ -430,3 +499,10 @@ iframe{
 }
 
 
+#gorget{
+    display:none;
+}
+a{
+    color:white;
+
+}
