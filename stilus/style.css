@@ -429,15 +429,4 @@ iframe{
     text-align:center;
 }
 
-.element-animation {
-  /* Hiding the element in the initial state */
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.element-animation.element-show {
-  opacity: 1;
-  transition: all 1.5s;
-  transform: translateY(0%);
-}
 
