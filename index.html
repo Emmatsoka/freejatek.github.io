@@ -14,7 +14,7 @@
 
             <header>
 
-            <nav class="navbar">
+            <nav class="navbar" id="fent">
                 <div id="logo">Free<mark>Jatek</mark></div>
                 <a href="#" class="toggle-button" onclick="menu()">
                   <span class="bar"></span>
@@ -166,13 +166,13 @@ var allBackgrounds = [ "./kepek/back.jpg",
  ]; 
  
 setInterval(function() { 
-	if (cycle < 5) { 
+	if (cycle < 2) { 
 		document.body.style.backgroundImage = "url('" + allBackgrounds[cycle] + "')"; 
 		cycle += 1; 
 	} else {  
 		cycle = 0; 
 	} 
-}, 5000); 
+}, 10000); 
 
 const menuItems = document.querySelectorAll('nav ul li a');
 

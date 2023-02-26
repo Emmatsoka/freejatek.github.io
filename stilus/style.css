@@ -51,7 +51,7 @@ html{
 }
 body{
     font-family: bebas;
-    background-image: url('../kepek/back.jpg');
+    background-image: url('../kepek/back2.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -99,6 +99,7 @@ header{
 #szoveg input:hover{
     background-color: #0f0f0f;
 }
+
 .navbar {
     display: flex;
     position: relative;
@@ -141,7 +142,7 @@ mark{
     text-decoration: none;
     color: white;
     padding: 1.0rem;
-    font-size: 26px;
+    font-size: 27px;
     font-weight: bold;
     font-family: dexend;
     padding-top: 35px;
@@ -194,11 +195,15 @@ mark{
     }
 .navbar{
     padding-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.719);
 }
     #navbar-links {
         display:none;
         width: 100%;
         padding-bottom: 20px;
+
     }
 
     #navbar-links ul {
@@ -237,7 +242,14 @@ mark{
     border: 2px solid rgb(255, 0, 64);
     outline: none;
 }
-
+@media (min-width: 1200px) {
+    #navbar-links{
+        display: block;
+    }
+    #szoveg{
+        padding-top:25vh;
+    }
+}
 
 
 @media only screen and (max-width: 1128px){
@@ -400,7 +412,7 @@ iframe{
     height: 140px;
     width: 100%;
     border-top:6px solid rgb(255, 0, 64);
-    margin-top:50px;
+    margin-top:80px;
   }
   footer h1{
     line-height: 130px;
@@ -499,10 +511,13 @@ iframe{
 }
 
 
-#gorget{
-    display:none;
-}
 a{
     color:white;
 
+}
+.navbar ul li a.piros,
+.navbar ul li a.piros:visited,
+.navbar ul li a.piros:hover,
+.navbar ul li a.piros:active {
+  color: red;
 }
