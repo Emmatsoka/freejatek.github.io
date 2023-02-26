@@ -186,17 +186,17 @@ mark{
         align-items: flex-start;
     }
 #logo {
-    margin-top: 25px;
+    margin-top: 20px;
 }
     .toggle-button {
         margin: 20px;
-        margin-top: 30px;
+        margin-top: 25px;
         display: flex;
     }
 .navbar{
     padding-bottom: 20px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     background-color: rgba(0, 0, 0, 0.719);
 }
     #navbar-links {
@@ -504,10 +504,12 @@ iframe{
 .fooldal p{
     color:white;
     text-align: center;
-    max-width: 300px;
+    max-width: 500px;
+    margin:0 auto;
 }
 .fooldal{
     text-align:center;
+
 }
 
 
