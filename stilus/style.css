@@ -365,6 +365,7 @@ iframe{
     width: 100%;
     display: block;
     min-height: 155vh;
+    opacity: 0.9;
 }
 
 ::-webkit-scrollbar {
@@ -413,6 +414,7 @@ iframe{
     width: 100%;
     border-top:6px solid rgb(255, 0, 64);
     margin-top:80px;
+    opacity: 0.9;
   }
   footer h1{
     line-height: 130px;
